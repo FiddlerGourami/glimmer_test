@@ -112,7 +112,7 @@ GEM
     glimmer-dsl-css (1.5.2)
       css_parser (>= 1.0.0, < 2.0.0)
       glimmer (>= 2.0.0, < 3.0.0)
-    glimmer-dsl-web (0.6.4)
+    glimmer-dsl-web (0.6.5)
       glimmer (~> 2.8.0)
       glimmer-dsl-css (~> 1.5.2)
       glimmer-dsl-xml (~> 1.4.0)
@@ -132,7 +132,8 @@ GEM
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.8.0)
-    irb (1.14.3)
+    irb (1.15.1)
+      pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.13.0)
@@ -162,6 +163,7 @@ GEM
     net-protocol (0.2.2)
       timeout
     net-smtp (0.5.0)
+      net-protocol
     nio4r (2.7.4)
     nokogiri (1.18.2-aarch64-linux-gnu)
       racc (~> 1.4)
@@ -199,6 +201,9 @@ GEM
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
     psych (5.2.3)
       date
       stringio
@@ -349,7 +354,7 @@ DEPENDENCIES
   brakeman
   capybara
   debug
-  glimmer-dsl-web (~> 0.6.4)
+  glimmer-dsl-web (~> 0.6.5)
   importmap-rails
   jbuilder
   puma (>= 5.0)
